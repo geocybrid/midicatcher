@@ -1,0 +1,12 @@
+ [Unit]
+ Description=Midicatcher script
+ After=network.target
+ Wants=network.target
+
+ [Service]
+ Type=idle
+ ExecStart=/bin/python3 /home/cybrid/midicatcher/main.py
+ User=cybrid
+
+ [Install]
+ WantedBy=multi-user.target
